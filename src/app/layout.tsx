@@ -17,13 +17,74 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: " BENNYTO | Marketing Pura Group",
-  description: "Portal Marketing Pura Group BENNYTO untuk solusi rekayasa mesin industri custom (BENSA, PAMIGO, Salt Washing), 4.000+ alsintan modern INARI, serta kemasan sekuriti terpadu Pura Group Kudus.",
+  title: "BENNYTO | Marketing Pura Group",
+
+  description:
+    "Portal resmi Marketing BENNYTO untuk menghubungkan kebutuhan industri dan instansi dengan kapabilitas manufaktur Pura Group Kudus, meliputi alat dan mesin pertanian, engineering, security printing, security paper, hologram, dan solusi industri.",
+
   keywords: [
-    " BENNYTO", "Bennyto", "Marketing Pura Group", "Pura Engineering", "INARI", "PT Pura Barutama", "Alsintan",
-    "Combine Harvester", "Vertical Dryer", "Rice Milling Unit", "BENSA", "PAMIGO", "Salt Washing Plant",
-    "Kudus", "Security Printing", "Paper Mill", "TKDN", "Penawaran Mesin"
+    "BENNYTO",
+    "Bennyto Pura Group",
+    "Marketing Pura Group",
+    "Pura Group",
+    "Pura Group Kudus",
+    "Pura Engineering",
+    "PT Pura Barutama",
+
+    // Agriculture & Alsintan
+    "alat pertanian",
+    "mesin pertanian",
+    "alat dan mesin pertanian",
+    "alsintan",
+    "alsintan Indonesia",
+    "mesin pertanian Indonesia",
+    "Combine Harvester",
+    "Vertical Dryer",
+    "Rice Milling Unit",
+    "INARI",
+
+    // Engineering & Manufacturing
+    "engineering Indonesia",
+    "industrial engineering",
+    "manufacturing Indonesia",
+    "custom machine",
+    "mesin industri",
+    "mesin industri custom",
+    "BENSA",
+    "PAMIGO",
+    "Salt Washing Plant",
+
+    // Security Printing
+    "security printing",
+    "security printing Indonesia",
+    "security paper",
+    "security paper Indonesia",
+    "kertas pengaman",
+    "cetak berpengaman",
+    "percetakan berpengaman",
+    "hologram",
+    "security hologram",
+
+    // General
+    "industrial solutions Indonesia",
+    "solusi industri",
+    "Kudus",
+    "TKDN",
+    "Penawaran Mesin",
   ],
+
+  robots: {
+    index: true,
+    follow: true,
+  },
+
+  openGraph: {
+    title: "BENNYTO | Marketing Pura Group",
+    description:
+      "Solusi industri dan manufaktur Pura Group meliputi alat pertanian, engineering, security printing, security paper, hologram, dan berbagai solusi industri.",
+    type: "website",
+    locale: "id_ID",
+  },
 };
 
 export default function RootLayout({
