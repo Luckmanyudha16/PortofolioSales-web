@@ -110,11 +110,24 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 4. Five Core Business Solutions */}
-      <BusinessCapabilityCards />
+      {/* 5. Credibility: Awards, Bintang Mahaputera, Certifications & TKDN */}
+      <section className="py-20 bg-slate-900 text-white border-t border-slate-800">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center max-w-2xl mx-auto mb-12">
+            <p className="text-xs uppercase tracking-widest font-bold text-amber-400">
+              {t('REKAM JEJAK KEPERCAYAAN & PRESTASI', 'VERIFIED CREDIBILITY & ACHIEVEMENTS')}
+            </p>
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-white mt-1">
+              {t('Tanda Kehormatan Negara & Sertifikasi Mutu', 'National State Honors & Certified Quality')}
+            </h2>
+          </div>
 
-      {/* 5. Featured Products & Machine Showcase */}
-      <section className="py-20 bg-slate-900 text-white relative">
+          <AwardSection />
+        </div>
+      </section>
+
+      {/* 6. Featured Products & Machine Showcase */}
+      <section className="py-20 bg-slate-950 text-white relative border-t border-slate-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-4">
             <div>
@@ -134,12 +147,17 @@ export default function HomePage() {
             </Link>
           </div>
 
+          {/* 4. Five Core Business Solutions */}
+          <BusinessCapabilityCards />
+
+
+
           <ProductGrid initialCategory="all" />
         </div>
       </section>
 
-      {/* 6. Precision Facilities Snapshot */}
-      <section className="py-20 bg-slate-950 text-white border-y border-slate-800">
+      {/* 7. Precision Facilities Snapshot */}
+      <section className="py-20 bg-slate-900 text-white border-y border-slate-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-2xl mx-auto mb-12">
             <p className="text-xs uppercase tracking-widest font-bold text-amber-400">
@@ -157,22 +175,6 @@ export default function HomePage() {
           </div>
 
           <FacilityGallery />
-        </div>
-      </section>
-
-      {/* 7. Credibility: Awards, Bintang Mahaputera, Certifications & TKDN */}
-      <section className="py-20 bg-slate-900 text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center max-w-2xl mx-auto mb-12">
-            <p className="text-xs uppercase tracking-widest font-bold text-amber-400">
-              {t('REKAM JEJAK KEPERCAYAAN & PRESTASI', 'VERIFIED CREDIBILITY & ACHIEVEMENTS')}
-            </p>
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-white mt-1">
-              {t('Tanda Kehormatan Negara & Sertifikasi Mutu', 'National State Honors & Certified Quality')}
-            </h2>
-          </div>
-
-          <AwardSection />
         </div>
       </section>
 

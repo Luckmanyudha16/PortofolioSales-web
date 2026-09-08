@@ -364,27 +364,18 @@ export const OFFICES_DATA = [
     city: 'Kudus',
     type: { id: 'KANTOR PUSAT & KAWASAN INDUSTRI', en: 'HEAD OFFICE & INDUSTRIAL COMPLEX' },
     address: 'Jl. AKBP. Agil Kusumadya 203, Kudus 59346, Jawa Tengah, Indonesia',
-    contactPerson: 'Perwakilan Marketing: Bennyto',
+    contactPerson: 'Marketing : Bennyto',
     email: 'benny@kudus.puragroup.com',
-    badge: { id: 'Kantor Pusat 100 Ha', en: 'Headquarters 100 Ha' },
+    badge: { id: 'Kantor Pusat', en: 'Head Office' },
     link: 'https://maps.google.com/?q=Pura+Group+Kudus'
   },
   {
     city: 'Jakarta',
-    type: { id: 'KANTOR PERWAKILAN IBU KOTA', en: 'JAKARTA REPRESENTATIVE OFFICE' },
+    type: { id: 'KANTOR PERWAKILAN', en: 'REPRESENTATIVE OFFICE' },
     address: 'Graha Pura, Jl. Pancoran Indah I No. 52, Jakarta Selatan 12780, Indonesia',
-    contactPerson: 'Perwakilan Marketing: Bennyto',
+    contactPerson: 'Marketing : Bennyto',
     email: 'benny@kudus.puragroup.com',
-    badge: { id: 'Graha Pura Jakarta', en: 'Graha Pura Jakarta' },
+    badge: { id: 'KANTOR PEMASARAN', en: 'Marketing Office' },
     link: 'https://maps.google.com/?q=Graha+Pura+Jakarta'
-  },
-  {
-    city: 'Surabaya',
-    type: { id: 'KANTOR PERWAKILAN JAWA TIMUR', en: 'SURABAYA REPRESENTATIVE OFFICE' },
-    address: 'Komplek Pertokoan Delta Permai, Jl. Raya Panjang Jiwo Permai No. 19-20 Blok 1B, Panjang Jiwo, Surabaya 60299, Indonesia',
-    contactPerson: 'Perwakilan Marketing: Bennyto',
-    email: 'benny@kudus.puragroup.com',
-    badge: { id: 'Delta Permai Surabaya', en: 'Delta Permai Surabaya' },
-    link: 'https://maps.google.com/?q=Delta+Permai+Surabaya'
   },
 ];

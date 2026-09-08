@@ -17,10 +17,10 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: " BENNYTO | Sales Marketing Pura Group",
-  description: "Portal resmi Sales Marketing BENNYTO untuk solusi rekayasa mesin industri custom (BENSA, PAMIGO, Salt Washing), 4.000+ alsintan modern INARI, serta kemasan sekuriti terpadu Pura Group Kudus.",
+  title: " BENNYTO | Marketing Pura Group",
+  description: "Portal Marketing Pura Group BENNYTO untuk solusi rekayasa mesin industri custom (BENSA, PAMIGO, Salt Washing), 4.000+ alsintan modern INARI, serta kemasan sekuriti terpadu Pura Group Kudus.",
   keywords: [
-    " BENNYTO", "Bennyto", "Sales Marketing Pura Group", "Pura Engineering", "INARI", "PT Pura Barutama", "Alsintan",
+    " BENNYTO", "Bennyto", "Marketing Pura Group", "Pura Engineering", "INARI", "PT Pura Barutama", "Alsintan",
     "Combine Harvester", "Vertical Dryer", "Rice Milling Unit", "BENSA", "PAMIGO", "Salt Washing Plant",
     "Kudus", "Security Printing", "Paper Mill", "TKDN", "Penawaran Mesin"
   ],

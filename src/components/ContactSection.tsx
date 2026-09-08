@@ -115,7 +115,7 @@ export default function ContactSection() {
 
           <div className="lg:col-span-5 flex flex-col gap-3">
             <a
-              href={`https://wa.me/${MARKETING_CONTACT.phones[0].raw}?text=Halo%20Bpk.%20Benny%20Kristyanto,%20saya%20ingin%20berkonsultasi%20mengenai%20produk%20dan%20permesinan%20Pura%20Group.`}
+              href={`https://wa.me/${MARKETING_CONTACT.phones[0].raw}?text=Halo%20Bpk.%20Bennyto%20,%20saya%20ingin%20berkonsultasi%20mengenai%20produk%20dan%20permesinan%20Pura%20Group.`}
               target="_blank"
               rel="noopener noreferrer"
               className="w-full inline-flex items-center justify-center gap-2.5 bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-3.5 px-6 rounded-xl text-xs uppercase tracking-wider shadow-lg shadow-emerald-600/30 transition-all hover:scale-[1.02]"
@@ -138,10 +138,10 @@ export default function ContactSection() {
       <div>
         <div className="text-center max-w-2xl mx-auto mb-10">
           <p className="text-xs uppercase tracking-widest font-bold text-amber-400">
-            {t('JARINGAN LOKASI KANTOR PERWAKILAN', 'REGIONAL OFFICE NETWORK')}
+            {t('JARINGAN LOKASI KANTOR PT Pura Group', 'REGIONAL OFFICE NETWORK PT Pura Group')}
           </p>
           <h3 className="text-2xl sm:text-3xl font-extrabold text-white mt-1">
-            {t('Kudus, Jakarta & Surabaya', 'Kudus, Jakarta & Surabaya')}
+            {t('Kudus & Jakarta', 'Kudus & Jakarta')}
           </h3>
           <p className="text-xs sm:text-sm text-slate-400 mt-2">
             {t(
@@ -151,7 +151,7 @@ export default function ContactSection() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-[820px] mx-auto">
           {OFFICES_DATA.map((office, idx) => (
             <div
               key={idx}
@@ -186,7 +186,7 @@ export default function ContactSection() {
 
               <div className="mt-6 pt-4 border-t border-slate-800 flex gap-2">
                 <a
-                  href={`https://wa.me/${MARKETING_CONTACT.phones[0].raw}?text=Halo%20Bpk.%20Benny%20Kristyanto,%20saya%20ingin%20berkonsultasi%20terkait%20wilayah%20${office.city}.`}
+                  href={`https://wa.me/${MARKETING_CONTACT.phones[0].raw}?text=Halo%20Bpk.%20Bennyto%20,%20saya%20ingin%20berkonsultasi%20terkait%20wilayah%20${office.city}.`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex-1 inline-flex items-center justify-center gap-1.5 bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold py-2.5 rounded-lg transition-colors"

@@ -97,9 +97,9 @@ export default function Footer() {
               </p>
             </div>
             <div className="space-y-1.5 text-[11px] text-slate-400">
-              <p><span className="text-slate-200 font-semibold">Kudus HQ:</span> Jl. AKBP. Agil Kusumadya 203, Kudus 59346</p>
-              <p><span className="text-slate-200 font-semibold">Jakarta:</span> Graha Pura, Jl. Pancoran Indah I No. 52, Jaksel 12780</p>
-              <p><span className="text-slate-200 font-semibold">Surabaya:</span> Delta Permai, Jl. Raya Panjang Jiwo Permai 19-20 Blok 1B</p>
+              <p><span className="text-slate-200 font-semibold">Head Office (HO) :</span> Jl. AKBP. Agil Kusumadya 203, Kudus 59346</p>
+              <p><span className="text-slate-200 font-semibold">Marketing :</span> Graha Pura, Jl. Pancoran Indah I No. 52, Jaksel 12780</p>
+
             </div>
           </div>
         </div>

@@ -66,7 +66,7 @@ export default function Navbar() {
             </span>
             <span className="text-slate-600">|</span>
             <span className="text-slate-400 font-medium">
-              {t('Portal Resmi Sales Marketing: Bennyto • Pura Group', 'Official Sales Marketing Portal: Bennyto • Pura Group')}
+              {t('Portal Marketing: Bennyto • Pura Group', 'Marketing Portal: Bennyto • Pura Group')}
             </span>
           </div>
           <div className="flex items-center gap-4">
