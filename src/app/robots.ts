@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 
 export default function robots(): MetadataRoute.Robots {
-    const baseUrl = "https://pura-group-bennyto.onrender.com";
+    const baseUrl = "https:/pura-group-bennyto.onrender.com";
 
     return {
         rules: {

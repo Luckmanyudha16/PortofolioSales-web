@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-    const baseUrl = "https://bennyto-puragroup.onrender.com";
+    const baseUrl = "https://pura-group-bennyto.onrender.com";
 
     return [
         {
