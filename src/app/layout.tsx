@@ -112,17 +112,26 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: "BENNYTO",
+    url: "https://pura-group-bennyto.onrender.com",
+    description:
+      "Portal resmi Marketing BENNYTO untuk menghubungkan kebutuhan industri dan instansi dengan kapabilitas manufaktur Pura Group.",
+  };
+
   return (
-    <html lang="id" className={`${geistSans.variable} ${geistMono.variable} antialiased scroll-smooth`}>
-      <body className="bg-slate-950 text-slate-100 min-h-screen flex flex-col font-sans selection:bg-amber-500 selection:text-slate-950">
-        <LanguageProvider>
-          <Navbar />
-          <main className="flex-grow pt-[72px] sm:pt-[92px]">
-            {children}
-          </main>
-          <Footer />
-          <WhatsAppInquiry />
-        </LanguageProvider>
+    <html lang="id">
+      <body>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(jsonLd),
+          }}
+        />
+
+        {children}
       </body>
     </html>
   );
