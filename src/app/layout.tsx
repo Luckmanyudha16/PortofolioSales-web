@@ -17,7 +17,12 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "BENNYTO | Marketing Pura Group",
+  metadataBase: new URL("https://bennyto-puragroup.onrender.com"),
+
+  title: {
+    default: "BENNYTO | Marketing Pura Group",
+    template: "%s | BENNYTO Pura Group",
+  },
 
   description:
     "Portal resmi Marketing BENNYTO untuk menghubungkan kebutuhan industri dan instansi dengan kapabilitas manufaktur Pura Group Kudus, meliputi alat dan mesin pertanian, engineering, security printing, security paper, hologram, dan solusi industri.",
@@ -78,12 +83,27 @@ export const metadata: Metadata = {
     follow: true,
   },
 
+  alternates: {
+    canonical: "/",
+  },
+
   openGraph: {
     title: "BENNYTO | Marketing Pura Group",
     description:
-      "Solusi industri dan manufaktur Pura Group meliputi alat pertanian, engineering, security printing, security paper, hologram, dan berbagai solusi industri.",
+      "Solusi industri dan manufaktur Pura Group meliputi alat pertanian, engineering, security printing, security paper, hologram, packaging, dan berbagai solusi industri.",
     type: "website",
     locale: "id_ID",
+    url: "https://pura-group-bennyto.onrender.com",
+    siteName: "BENNYTO",
+
+    images: [
+      {
+        url: "/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "BENNYTO | Marketing Pura Group",
+      },
+    ],
   },
 };
 
