@@ -17,7 +17,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://bennyto-puragroup.onrender.com"),
+  metadataBase: new URL("https://pura-group-bennyto.onrender.com"),
 
   title: {
     default: "BENNYTO | Marketing Pura Group",

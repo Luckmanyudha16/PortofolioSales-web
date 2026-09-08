@@ -46,7 +46,7 @@ Pastikan source code proyek sudah di-push ke repository GitHub Anda (bisa public
 ### Langkah 3: Konfigurasi di Dashboard Render
 Isi formulir konfigurasi dengan pengaturan berikut:
 
-* **Name**: `bennyto-puragroup` *(Nama ini menentukan URL Anda: `https://bennyto-puragroup.onrender.com`)*
+* **Name**: `bennyto-puragroup` *(Nama ini menentukan URL Anda: `https://pura-group-bennyto.onrender.com`)*
 * **Region**: `Singapore` *(paling cepat untuk akses dari Indonesia)*
 * **Branch**: `main` *(atau branch utama repo Anda)*
 * **Root Directory**: `pura-web` *(Wajib diisi jika folder `pura-web` berada di dalam subfolder repository, atau kosongkan jika repo langsung di root `pura-web`)*
@@ -67,4 +67,4 @@ Di bagian **Advanced** -> **Environment Variables**, tambahkan:
 
 ### Langkah 5: Klik Deploy
 Klik **Create Web Service**. Render akan otomatis memproses *build* dan aplikasi Anda akan langsung aktif di URL:
-👉 **`https://bennyto-puragroup.onrender.com`**
+👉 **`https://pura-group-bennyto.onrender.com`**
