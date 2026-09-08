@@ -1,36 +1,70 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Pura Group & Pura Engineering Corporate Website
 
-## Getting Started
+Website resmi korporat Pura Group & Divisi Rekayasa (INARI), dibangun menggunakan **Next.js 16, TypeScript, Tailwind CSS, Framer Motion, dan Lucide React** berbasis dokumen PDF resmi 2026.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 1. Cara Menjalankan di Komputer Lokal
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Penyebab error sebelumnya adalah karena terminal berada di folder luar (`Project ayah`), sedangkan file proyek Next.js berada di dalam subfolder **`pura-web`**.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Langkah-langkah:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. Buka Terminal / PowerShell.
+2. Masuk ke dalam direktori `pura-web`:
+   ```bash
+   cd "d:\Antigravity IDE\Project ayah\pura-web"
+   ```
+3. Jalankan server pengembangan (Development Mode):
+   ```bash
+   npm run dev
+   ```
+   *Atau jika ingin menjalankan versi Production (cepat & optimal):*
+   ```bash
+   npm run build
+   npm run start
+   ```
+4. Buka browser di alamat:
+   ```
+   http://localhost:3000
+   ```
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 2. Cara Deploy ke Render (Render.com)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Aplikasi ini sudah siap untuk di-deploy ke **Render.com** sebagai **Web Service**.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Langkah 1: Push Project ke GitHub
+Pastikan source code proyek sudah di-push ke repository GitHub Anda (bisa public atau private).
 
-## Deploy on Vercel
+### Langkah 2: Buat Web Service di Render
+1. Login ke akun Anda di [dashboard.render.com](https://dashboard.render.com/).
+2. Klik tombol **New +** di pojok kanan atas, lalu pilih **Web Service**.
+3. Pilih opsi **Build and deploy from a Git repository**, lalu hubungkan dengan repository GitHub Anda.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Langkah 3: Konfigurasi di Dashboard Render
+Isi formulir konfigurasi dengan pengaturan berikut:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+* **Name**: `bennyto-puragroup` *(Nama ini menentukan URL Anda: `https://bennyto-puragroup.onrender.com`)*
+* **Region**: `Singapore` *(paling cepat untuk akses dari Indonesia)*
+* **Branch**: `main` *(atau branch utama repo Anda)*
+* **Root Directory**: `pura-web` *(Wajib diisi jika folder `pura-web` berada di dalam subfolder repository, atau kosongkan jika repo langsung di root `pura-web`)*
+* **Runtime**: `Node`
+* **Build Command**:
+  ```bash
+  npm install && npm run build
+  ```
+* **Start Command**:
+  ```bash
+  npm run start
+  ```
+* **Instance Type**: `Free`
+
+### Langkah 4: Environment Variables
+Di bagian **Advanced** -> **Environment Variables**, tambahkan:
+* Key: `NODE_VERSION`, Value: `20`
+
+### Langkah 5: Klik Deploy
+Klik **Create Web Service**. Render akan otomatis memproses *build* dan aplikasi Anda akan langsung aktif di URL:
+👉 **`https://bennyto-puragroup.onrender.com`**
