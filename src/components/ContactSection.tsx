@@ -62,7 +62,7 @@ export default function ContactSection() {
           <div className="lg:col-span-7 space-y-4">
             <div className="inline-flex items-center gap-2 bg-amber-500/20 border border-amber-500/40 px-3.5 py-1.5 rounded-full text-xs font-bold text-amber-400">
               <UserCheck className="w-4 h-4" />
-              <span>{t('KONTAK RESMI SALES & MARKETING', 'OFFICIAL SALES & MARKETING DESK')}</span>
+              <span>{t('KONTAK RESMI MARKETING', 'OFFICIAL MARKETING DESK')}</span>
             </div>
 
             <div>
@@ -141,7 +141,7 @@ export default function ContactSection() {
             {t('JARINGAN LOKASI KANTOR PT Pura Group', 'REGIONAL OFFICE NETWORK PT Pura Group')}
           </p>
           <h3 className="text-2xl sm:text-3xl font-extrabold text-white mt-1">
-            {t('Kudus & Jakarta', 'Kudus & Jakarta')}
+            {t('Kudus & Jakarta & Surabaya', 'Kudus, Jakarta & Surabaya')}
           </h3>
           <p className="text-xs sm:text-sm text-slate-400 mt-2">
             {t(

@@ -104,7 +104,7 @@ export default function Navbar() {
               </span>
             </div>
             <span className="text-[10px] tracking-wider text-slate-400 font-medium uppercase">
-              {t('Sales Marketing Resmi Pura Group', 'Official Sales Marketing Pura Group')}
+              {t('Marketing Resmi Pura Group', 'Official Marketing Pura Group')}
             </span>
           </div>
         </Link>

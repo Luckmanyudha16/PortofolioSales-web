@@ -1,6 +1,8 @@
 'use client';
 
 import React from 'react';
+import Image from "next/image";
+import logoPura from "../Logopura.png";
 import Link from 'next/link';
 import { useLanguage } from '@/context/LanguageContext';
 import { ShieldCheck, Phone, Mail, MapPin, ArrowUp } from 'lucide-react';
@@ -21,13 +23,19 @@ export default function Footer() {
             <div className="flex items-center gap-3">
               <div className="w-9 h-9 rounded-lg bg-amber-500 p-0.5 shadow-md">
                 <div className="w-full h-full bg-slate-950 rounded-[6px] flex items-center justify-center">
-                  <span className="text-amber-400 font-black text-lg">P</span>
+                  <Image
+                    src={logoPura}
+                    alt="Pura Group"
+                    width={36}
+                    height={36}
+                    className="w-full h-full object-contain"
+                    priority
+                  />
                 </div>
               </div>
               <div>
                 <span className="font-extrabold text-lg text-white tracking-tight">PURA GROUP</span>
                 <p className="text-[10px] uppercase font-bold text-amber-400 tracking-wider">
-                  {t('DIVISI REKAYASA & INARI', 'ENGINEERING DIVISION & INARI')}
                 </p>
               </div>
             </div>

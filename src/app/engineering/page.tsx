@@ -5,14 +5,14 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useLanguage } from '@/context/LanguageContext';
 import { INARI_VALUES } from '@/data/companyData';
-import { 
-  Wrench, 
-  Cpu, 
-  ShieldCheck, 
-  ArrowRight, 
-  CheckCircle2, 
-  Award, 
-  Settings, 
+import {
+  Wrench,
+  Cpu,
+  ShieldCheck,
+  ArrowRight,
+  CheckCircle2,
+  Award,
+  Settings,
   Sparkles,
   MessageSquare
 } from 'lucide-react';
@@ -24,8 +24,8 @@ export default function EngineeringPage() {
     const phone = '6281290260777';
     const text = encodeURIComponent(
       t(
-        'Halo Bpk. Benny Kristyanto (Marketing Pura Engineering), kami ingin berkonsultasi mengenai proyek permesinan custom / pengadaan alsintan INARI untuk perusahaan kami.',
-        'Hello Mr. Benny Kristyanto (Pura Engineering Marketing), we would like to consult regarding custom machinery projects / INARI agricultural machinery procurement.'
+        'Halo Bpk. Bennyto (Marketing Pura Engineering), kami ingin berkonsultasi mengenai proyek permesinan custom / pengadaan alsintan INARI untuk perusahaan kami.',
+        'Hello Mr. Bennyto (Pura Engineering Marketing), we would like to consult regarding custom machinery projects / INARI agricultural machinery procurement.'
       )
     );
     window.open(`https://wa.me/${phone}?text=${text}`, '_blank');
@@ -95,6 +95,7 @@ export default function EngineeringPage() {
                 src="/assets/facilities/cnc_precision_workshop.png"
                 alt="Pura Engineering Precision Workshop"
                 fill
+                sizes="(max-width: 1024px) 100vw, 40vw"
                 className="object-cover object-center"
               />
               <div className="absolute bottom-3 left-3 right-3 bg-slate-950/90 backdrop-blur-md p-3 rounded-lg border border-slate-800 text-[11px] text-slate-300">
@@ -123,9 +124,9 @@ export default function EngineeringPage() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-5 gap-4">
-          {INARI_VALUES.map((val) => (
+          {INARI_VALUES.map((val, idx) => (
             <div
-              key={val.letter}
+              key={`${val.letter}-${idx}`}
               className="bg-slate-900/70 border border-slate-800 p-6 rounded-2xl flex flex-col justify-between hover:border-amber-500/40 transition-all group"
             >
               <div>
@@ -259,7 +260,7 @@ export default function EngineeringPage() {
               {t('Siap Mendiskusikan Pengadaan Mesin atau Proyek Turnkey?', 'Ready to Discuss Machinery or Turnkey Projects?')}
             </h4>
             <p className="text-xs text-slate-400 mt-1">
-              {t('Hubungi technical sales engineer kami untuk penawaran harga resmi dan spesifikasi teknis.', 'Contact our technical sales engineers for official quotations and engineering specifications.')}
+              {t('Hubungi marketing kami untuk penawaran harga resmi dan spesifikasi teknis.', 'Contact our marketing for official quotations and engineering specifications.')}
             </p>
           </div>
           <button
@@ -268,7 +269,7 @@ export default function EngineeringPage() {
             className="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-500 text-white font-bold px-6 py-3 rounded-xl text-xs transition-colors shadow-lg shadow-emerald-600/20"
           >
             <MessageSquare className="w-4 h-4" />
-            <span>{t('Hubungi Sales Engineer WA', 'Chat Sales Engineer on WA')}</span>
+            <span>{t('Hubungi Marketing WA', 'Chat Marketing on WA')}</span>
           </button>
         </div>
       </div>

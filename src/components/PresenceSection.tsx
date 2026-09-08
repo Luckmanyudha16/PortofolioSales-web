@@ -76,6 +76,7 @@ export default function PresenceSection() {
                 src="/assets/company/indonesia_distribution_detailed.jpg"
                 alt="Persebaran Alat dan Mesin Pertanian Pura Engineering"
                 fill
+                sizes="(max-width: 1024px) 100vw, 50vw"
                 className="object-cover object-center"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent" />

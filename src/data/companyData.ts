@@ -345,12 +345,12 @@ export const MARKETING_CONTACT = {
   name: 'Bennyto',
   shortName: 'Bennyto',
   title: {
-    id: 'Senior Marketing Executive & Konsultan Rekayasa',
-    en: 'Senior Marketing Executive & Engineering Consultant'
+    id: 'Marketing Executive',
+    en: 'Marketing Executive'
   },
   department: {
-    id: 'Divisi Rekayasa Permesinan & Industri Pura Group',
-    en: 'Pura Group Engineering & Industrial Machinery Division'
+    id: 'Divisi Security Printing & Engineering',
+    en: 'Security Printing & Engineering Division'
   },
   phones: [
     { display: '0812 9026 0777', raw: '6281290260777' },

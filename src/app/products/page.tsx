@@ -61,7 +61,7 @@ export default function ProductsPage() {
             </p>
           </div>
           <a
-            href="https://wa.me/6281290260777?text=Halo%20Bpk.%20Benny%20Kristyanto%20(Marketing%20Pura%20Engineering),%20saya%20ingin%20berkonsultasi%20mengenai%20kebutuhan%20mesin%20custom%20non-standar."
+            href="https://wa.me/6281290260777?text=Halo%20Bpk.%20Bennyto%20(Marketing%20Pura%20Engineering),%20saya%20ingin%20berkonsultasi%20mengenai%20kebutuhan%20mesin%20custom%20non-standar."
             target="_blank"
             rel="noopener noreferrer"
             className="shrink-0 inline-flex items-center gap-2 bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold px-6 py-3 rounded-xl text-xs transition-colors"
